@@ -1,4 +1,3 @@
-#fingers crossed
 print("Welcome to the computer!")
 with open("Username1.txt",mode="r") as f:
     username1 = f.read()
@@ -131,3 +130,8 @@ while loggedIn == False:
                 
             
         
+
+
+
+
+#chese is great
