@@ -1,0 +1,28 @@
+import random
+print ("Welcome to blackjack!")
+name = input ("What is your name?")
+print ("Good luck",name)
+cap = 21
+while True:
+    while True:
+        playerScore = 0
+        card1 = random.randint(1,11)
+        card2 = random.randint(1,11)
+        print ("Your cards are...",card1,"and",card2)
+        playerScore = playerScore + card1 + card2
+        print ("Your current total is", playerScore)
+        choice = input ("Would you like to stick or twist?")
+        if choice == "twist":
+            card3 = random.randint(1,11)
+            print ("Your cards are...",card1,",",card2,"and",card3)
+            playerScore = playerScore + card3
+            print ("Your current total is", playerScore)
+        else:
+            print("well done",name,"your total score is...")
+            print("...",playerScore,"!")
+            playagain = ("Would you like to play again",name,"?")
+            if playagain == "yes":
+                break
+            else:
+                quit
+            
