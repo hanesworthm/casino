@@ -21,6 +21,17 @@ def slotsMachine(chips):
             print(symbol1)
             print(symbol2)
             print(symbol3)
+        elif ready1 == 'chips':
+            chipMod = int(input('h0w much ch1ps ya w0nt ß01?'))
+            chips = chipMod
+            print('you now have',chips)
+            symbol1=random.choice(fruit)
+            symbol2=random.choice(fruit)
+            symbol3=random.choice(fruit)
+            print("You rolled:")
+            print(symbol1)
+            print(symbol2)
+            print(symbol3)
             if symbol1=="Skull" and symbol2=="Skull" and symbol3=="Skull":
                 print("You got three skulls so you lost all your chips!")
                 break
